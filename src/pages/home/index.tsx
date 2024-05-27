@@ -1,8 +1,10 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "../../components/layout/header";
 
 export default function Home() {
-  const isLogin = window.location.pathname.includes("login");
+  const location = useLocation();
+
+  const isLogin = location.pathname.includes("login");
   return (
     <div>
       <Header />
