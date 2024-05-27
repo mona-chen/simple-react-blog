@@ -1,5 +1,5 @@
 import "./styles.css";
-// import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 
 export default function Header() {
   return (
@@ -13,7 +13,7 @@ export default function Header() {
         <p>Login</p>
       </div>
 
-      <button>Login</button>
+      <Button>Login</Button>
     </div>
   );
 }
