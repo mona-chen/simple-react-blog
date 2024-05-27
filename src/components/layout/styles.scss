@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    height: 2rem;
+
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+
+    p {
+        font-size: 0.8rem;
+        color: rgb(13, 13, 12)
+    }
+
+}
