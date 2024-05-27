@@ -1,7 +1,9 @@
 import "./styles.css";
 import { Button } from "../../components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-row justify-between header">
       <div>Logo</div>
@@ -10,10 +12,9 @@ export default function Header() {
         <p>Home</p>
         <p>Blog</p>
         <p>About</p>
-        <p>Login</p>
       </div>
 
-      <Button>Login</Button>
+      <Button onClick={() => navigate("/login")}>Login</Button>
     </div>
   );
 }
